@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    display: flex;
+}
+
+header > h1 {
+    margin-left: 1.875rem;
+    justify-self: left;
+}
+
+header > nav {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul {
+    margin-right: 3.125rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav > ul li {
+    display: inline-block;
+}
+
+.header-links {
+    color: inherit;
+    text-decoration: none;
+}
+
+.intro {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.625rem;
+}
+
+.intro >.panel {
+    background-color: green;
+    height: 75vh;
+    width: 100px;
+}
+
