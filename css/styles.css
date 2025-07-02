@@ -4,6 +4,12 @@
     font-family: Montserrat;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
 }
 
 header {
@@ -56,8 +62,8 @@ header {
     padding-top: 1.5rem;
 }
 
-.intro-container > #intro-panel {
-    background-color: whitesmoke;
+#intro-panel {
+    background-color: white;
     height: 75vh;
     width: 85%;
     border-top-left-radius: 3rem;
@@ -78,35 +84,190 @@ header {
     font-weight: bold;
 }
 
-.skill-container {
+.section-container {
     display: flex;
     flex-direction: column;
     height: 80vh;
     align-items: center;
     position: relative;
+    background-color: white;
 }
 
-.skill-container > div {
-    ;
+.skill-container {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: #F1EFEC;
 }
 
-.skill-container > h2 {
+.section-container > h2 {
     font-size: 4.2rem;
-    position: absolute;
     margin-top: 6.2rem;
 }
 
-.skill-container > .skills {
+.section-container > .skills {
     display: flex;
-    width: 100vh;
-    justify-content: space-between;
-    position: absolute;
-    top: 18.5rem;
+    width: 100%;
+    justify-content: center;
+    gap: 5rem;
+    margin: auto 0;
+}
+
+.skill-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-box {
-    background-color: aqua;
     border: solid 3px black;
-    height: 15rem;
-    width: 15rem;
-}   
+    height: 12rem;
+    width: 12rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+#python-logo {
+    width: 100%;
+}
+
+#javaScript-logo {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.skill-text {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-container {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: #FCF5ED;
+}
+
+.project-container > h2 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.project > img {
+    width: 30%;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hover-grow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-grow:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+.project span {
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px black;
+}
+
+#civil {
+    color: white;
+}
+
+#calculator {
+    color: yellow;
+}
+
+.project > p {
+    width: 60%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: black;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.contact-panel {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 2rem;
+    align-items: center;
+    width: 60%;
+    background-color: transparent;
+    border: solid white 0.5rem;
+    border-radius: 3rem;
+}
+
+.contact-panel h2 {
+    font-size: 4.2em;
+    color: white;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    width: 100%;
+    margin: 4em 0 2em 0  ;
+}
+
+.contacts div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid white 0.4em;
+    width: 19em;
+    height: 14em;
+    background-color: black;
+    border-radius: 3em;
+    color: white;
+}
+
+.contact span {
+    padding: 0.8em;
+}
+
+.email img {
+    width: 5.5em;
+}
+
+.linkedIn img {
+    width: 5em;
+}
+
+footer {
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    background-color: #FCF5ED;
+    padding: 1rem;
+    color: #1F1717;
+    text-align: center;
+    font-size: 2.5rem;
+}
+

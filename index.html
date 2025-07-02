@@ -1,41 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prakash Dangi</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
   <header>
     <p class="navbar-name"><strong>Prakash Dangi</strong></p>
     <nav class="navbar">
       <ul class="links">
-        <li><a href="" class="header-links">Work</a></li>
-        <li><a href="" class="header-links">Resume</a></li>
-        <li><a href="" class="header-links">LinkedIn</a></li>
-        <li><a href="" class="header-links">GitHub</a></li>
-        <li><a href="" class="header-links">Contact</a></li>
+        <li><a href="#projects-section" class="header-links">Work</a></li>
+        <li><a href="https://drive.google.com/file/d/1h824mXFBR9Apdq8yYMGrfnegMANu9pKn/view?usp=sharing" class="header-links" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        <li><a href="https://www.linkedin.com/in/prakash-dangi-a3a831279" class="header-links" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/prakash-dangi" class="header-links" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="#contact-section" class="header-links">Contact</a></li>
       </ul>
     </nav>
   </header>
-  
-  <div class="intro-container">
-    <div id="intro-panel">
-      <div id="intro">
-        <h1>Hi, I'm Prakash,</h1>
-        <p> I love solving problems through code.<br> This site is where I share the stuff I build, learn, and experiment with.</p>
+  <section id="hero-section">
+    <div class="intro-container">
+      <div id="intro-panel">
+        <div id="intro">
+          <h1>Hi, I'm Prakash,</h1>
+          <p> I love solving problems through code.<br> This site is where I share the stuff I build, learn, and
+            experiment with.</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="skill-container">
-    <h2>My Skills</h2>
-    <div class="skills">
-      <div class="skill-box"></div>
-      <div class="skill-box"></div>
-      <div class="skill-box"></div>
-      <div class="skill-box"></div>
+  </section>
+
+  <section id="skill-section">
+    <div class="section-container skill-container">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <div class="skill-main">
+          <div class="skill-box"><img class="java" src="images/java-4.svg" alt="java-logo"></div>
+          <span class="skill-text">Java</span>
+        </div>
+        <div class="skill-main">
+          <div class="skill-box"><img src="images/c-1.svg" alt="C-logo"></div><span class="skill-text">C</span>
+        </div>
+        <div class="skill-main">
+          <div class="skill-box"><img id="python-logo" src="images/[CITYPNG.COM]HD Python Logo Symbol Transparent PNG - 2000x2000.png" alt="python-logo"></div><span class="skill-text">Python</span>
+        </div>
+        <div class="skill-main">
+          <div class="skill-box"><img id="javaScript-logo" src="images/Unofficial_JavaScript_logo_2.svg.png" alt="javaScript-logo"></div><span class="skill-text">JavaScript</span>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <section id="projects-section">
+    <div class="section-container project-container">
+      <h2>Projects</h2>
+      <div class="project">
+        <img class="hover-grow" src="images/Screenshot 2025-07-02 092207.png" alt="Civil Calculator">
+        <p><span id="civil">Civil</span><span id="calculator">Calculator</span><br>A responsive web application that calculates essential civil engineering parameters, including stress, strain, 
+Poisson's ratio, Young’s modulus, and other elastic moduli made using HTML, CSS and, JavaScript.</p>
+      </div>
+  </section>
+
+  <section id="contact-section">
+    <div class="contact-panel">
+      <h2>Contact</h2>
+      <div class="contacts">
+        <div class="email contact">
+          <a href="mailto:prakashdangi2997@gmail.com">
+            <img class="hover-grow" src="images/envelope-regular.svg" alt="envelope">
+          </a>
+          <span>prakashdangi2997@gmail.com</span>
+        </div>
+        <div class="linkedIn contact">
+          <a target="_blank" href="https://www.linkedin.com/in/prakash-dangi-a3a831279" rel="noopener noreferrer"><img class="hover-grow" src="images/linkedin-brands.svg" alt="LinkedIn"></a>
+          <span>LinkedIn</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h2>PRAKASH DANGI</h2>
+  </footer>
 </body>
+
 </html>
